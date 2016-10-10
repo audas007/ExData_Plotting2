@@ -12,6 +12,7 @@ SCC <-
     readRDS("Source_Classification_Code.rds")
 
 library(ggplot2)
+library(dplyr)
 
 ## grep for data for coal combustion
 index1 <- with(SCC, grepl("coal", Short.Name, ignore.case = TRUE))

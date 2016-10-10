@@ -12,6 +12,7 @@ SCC <-
     readRDS("Source_Classification_Code.rds")
 
 library(ggplot2)
+library(dplyr)
 
 ## grep for data for motor vehicle
 index1 <- with(SCC, grepl("motor", Short.Name, ignore.case = TRUE))
